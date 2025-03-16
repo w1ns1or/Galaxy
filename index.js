@@ -113,7 +113,7 @@ let send_btn = document.querySelector('.submit-btn-send')
 send_btn.addEventListener('mouseenter', make_transparent)
 send_btn.addEventListener('mouseleave', make_colorful)
 send_btn.addEventListener('click',function(){
-    emailjs.sendForm("default_service", "submit_form", { to_name: "Ярослав", message: "Привет!", reply_to: "solnopekovaroslav@gmail.com" }
+    emailjs.send("service_qgbc1ru", "template_i03s1ig", { email: "solnopekovaroslav@gmail.com", reply_to: "solnopekovaroslav@gmail.com",price:'0',total:'0' }
                 ) .then(response => console.log('Письмо успешно отправлено!', response)
                        ) .catch(error => console.log('Возникла ошибка...', error));
 }
