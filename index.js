@@ -1,4 +1,6 @@
 // Пожалуйста, не меняй код ниже. Он необходим для правильной настройки позиционирования элементов :)
+emailjs.init({
+    publicKey:"GY9XwVJfUOlnFvRmu"});
 let team1 = document.querySelector('.team1')
 let team2 = document.querySelector('.team2')
 let team3 = document.querySelector('.team3')
@@ -110,7 +112,11 @@ let send_btn = document.querySelector('.submit-btn-send')
 
 send_btn.addEventListener('mouseenter', make_transparent)
 send_btn.addEventListener('mouseleave', make_colorful)
-
+send_btn.addEventListener('click',function(){
+    emailjs.sendForm("default_service", "submit_form", { to_name: "Ярослав", message: "Привет!", reply_to: "solnopekovaroslav@gmail.com" }
+                ) .then(response => console.log('Письмо успешно отправлено!', response)
+                       ) .catch(error => console.log('Возникла ошибка...', error));
+}
 // Пасхалка
 function easter_egg() {
     let mars1 = document.querySelector('.mars1')
