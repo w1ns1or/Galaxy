@@ -116,7 +116,7 @@ send_btn.addEventListener('click',function(){
     emailjs.send("service_qgbc1ru", "template_i03s1ig", { email: "solnopekovaroslav@gmail.com", reply_to: "solnopekovaroslav@gmail.com",price:'0',total:'0' }
                 ) .then(response => console.log('Письмо успешно отправлено!', response)
                        ) .catch(error => console.log('Возникла ошибка...', error));
-}
+})
 // Пасхалка
 function easter_egg() {
     let mars1 = document.querySelector('.mars1')
