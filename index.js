@@ -1,6 +1,6 @@
 // Пожалуйста, не меняй код ниже. Он необходим для правильной настройки позиционирования элементов :)
 emailjs.init({
-    publicKey: 'GY9XwVJfUOlnFvRmu'});
+    publicKey: 'UKC1fZJ_1ljVb8a1w'});
 let team1 = document.querySelector('.team1')
 let team2 = document.querySelector('.team2')
 let team3 = document.querySelector('.team3')
